@@ -4,6 +4,9 @@
 >
 > This project is a fork of [imskyleen/bprogress](https://github.com/imskyleen/bprogress), All credits goes to [imskyleen](https://github.com/imskyleen).
 >
+> The only differences is:
+> - You can now use `event.preventDefault()` on anchor click to prevent the progress bar from starting
+>
 > Only React and Next.js will be supported (for now)
 >
 > The documentation has not been updated yet

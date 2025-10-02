@@ -1,5 +1,11 @@
 # @lop-town/bprogress-react
 
+## 1.2.8
+
+### Patch Changes
+
+- fix: make sure we are last listener when anchor click is triggered
+
 ## 1.2.7
 
 ### Patch Changes

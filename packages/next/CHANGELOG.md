@@ -1,5 +1,11 @@
 # @lop-town/bprogress-next
 
+## 3.2.13
+
+### Patch Changes
+
+- chore: upgrade to `@lop-town/bprogress-react@1.2.8`
+
 ## 3.2.12
 
 ### Patch Changes

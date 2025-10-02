@@ -57,60 +57,62 @@ export function useAnchorProgress(
     if (disableAnchorClick) return;
 
     const handleAnchorClick = (event: MouseEvent) => {
-      // Skip preventDefault
-      if (event.defaultPrevented) return;
+      setTimeout(() => { // Make sure we are last listener
+        // Skip preventDefault
+        if (event.defaultPrevented) return;
 
-      const anchorElement = event.currentTarget as
-        | HTMLAnchorElement
-        | SVGAElement;
+        const anchorElement = event.currentTarget as
+          | HTMLAnchorElement
+          | SVGAElement;
 
-      if (anchorElement.hasAttribute('download')) return;
+        if (anchorElement.hasAttribute('download')) return;
 
-      const target = event.target as HTMLElement | Element;
-      let preventProgress =
-        target?.getAttribute('data-prevent-progress') === 'true' ||
-        anchorElement?.getAttribute('data-prevent-progress') === 'true';
+        const target = event.target as HTMLElement | Element;
+        let preventProgress =
+          target?.getAttribute('data-prevent-progress') === 'true' ||
+          anchorElement?.getAttribute('data-prevent-progress') === 'true';
 
-      if (!preventProgress) {
-        let element: HTMLElement | Element | null = target;
+        if (!preventProgress) {
+          let element: HTMLElement | Element | null = target;
 
-        while (element && element.tagName.toLowerCase() !== 'a') {
-          if (
-            element.parentElement?.getAttribute('data-prevent-progress') ===
-            'true'
-          ) {
-            preventProgress = true;
-            break;
+          while (element && element.tagName.toLowerCase() !== 'a') {
+            if (
+              element.parentElement?.getAttribute('data-prevent-progress') ===
+              'true'
+            ) {
+              preventProgress = true;
+              break;
+            }
+            element = element.parentElement;
           }
-          element = element.parentElement;
         }
-      }
 
-      if (preventProgress) return;
+        if (preventProgress) return;
 
-      const anchorTarget = getAnchorProperty(anchorElement, 'target');
-      // Skip anchors with target="_blank"
-      if (anchorTarget === '_blank') return;
+        const anchorTarget = getAnchorProperty(anchorElement, 'target');
+        // Skip anchors with target="_blank"
+        if (anchorTarget === '_blank') return;
 
-      // Skip control/command/option/alt+click
-      if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey)
-        return;
+        // Skip control/command/option/alt+click
+        if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey)
+          return;
 
-      const targetHref = getAnchorProperty(anchorElement, 'href');
-      const targetUrl = targetPreprocessor
-        ? targetPreprocessor(new URL(targetHref))
-        : new URL(targetHref);
-      const currentUrl = new URL(location.href);
+        const targetHref = getAnchorProperty(anchorElement, 'href');
+        const targetUrl = targetPreprocessor
+          ? targetPreprocessor(new URL(targetHref))
+          : new URL(targetHref);
+        const currentUrl = new URL(location.href);
 
-      if (
-        shallowRouting &&
-        isSameURLWithoutSearch(targetUrl, currentUrl) &&
-        disableSameURL
-      )
-        return;
-      if (isSameURL(targetUrl, currentUrl) && disableSameURL) return;
+        if (
+          shallowRouting &&
+          isSameURLWithoutSearch(targetUrl, currentUrl) &&
+          disableSameURL
+        )
+          return;
+        if (isSameURL(targetUrl, currentUrl) && disableSameURL) return;
 
-      start(startPosition, delay);
+        start(startPosition, delay);
+      }, 0);
     };
 
     const handleMutation: MutationCallback = () => {
