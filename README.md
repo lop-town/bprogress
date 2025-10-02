@@ -1,4 +1,4 @@
-# BProgress
+# @lop-town/bprogress
 
 > [!IMPORTANT]
 >
@@ -10,6 +10,12 @@
 > Only React and Next.js will be supported (for now)
 >
 > The documentation has not been updated yet
+
+---
+
+# --- Original README.md ---
+
+# BProgress
 
 **Next NProgress Bar and NProgress V2 become BProgress!**
 
