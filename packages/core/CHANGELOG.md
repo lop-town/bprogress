@@ -1,5 +1,11 @@
 # @lop-town/bprogress-core
 
+## 1.3.5
+
+### Patch Changes
+
+- chore: nothing, i accidentally deleted the published `1.3.4` so now i have to update the version
+
 ## 1.3.4
 
 ### Patch Changes
