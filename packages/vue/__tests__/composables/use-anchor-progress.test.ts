@@ -7,7 +7,7 @@ import { progressSymbol } from '../../src/composables/use-progress';
 jest.useFakeTimers();
 
 // Mocks utils functions
-jest.mock('@bprogress/core', () => ({
+jest.mock('@lop-town/bprogress-core', () => ({
   isSameURL: jest.fn(() => false),
   isSameURLWithoutSearch: jest.fn(() => false),
   getAnchorProperty: (element: HTMLElement, prop: string) => {

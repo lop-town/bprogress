@@ -6,7 +6,7 @@ import {
   AppProgressProvider as ProgressProvider,
   Spinner,
   SpinnerIcon,
-} from '@bprogress/next';
+} from '@lop-town/bprogress-next';
 
 const Providers = ({ children }: { children: React.ReactNode }) => {
   return (

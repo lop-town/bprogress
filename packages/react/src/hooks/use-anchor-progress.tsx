@@ -3,7 +3,7 @@ import {
   isSameURL,
   isSameURLWithoutSearch,
   getAnchorProperty,
-} from '@bprogress/core';
+} from '../../../core/dist';
 import { useProgress } from '../providers/progress-provider';
 import type { UseAnchorProgressOptions } from '../types';
 

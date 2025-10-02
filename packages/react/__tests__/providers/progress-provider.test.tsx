@@ -4,10 +4,10 @@ import {
   ProgressProvider,
   useProgress,
 } from '../../src/providers/progress-provider';
-import { BProgress, type BProgressOptions } from '@bprogress/core';
+import { BProgress, type BProgressOptions } from '../../../core/dist';
 
 // Mock BProgress to spy on function calls
-jest.mock('@bprogress/core', () => ({
+jest.mock('@lop-town/bprogress-core', () => ({
   BProgress: {
     start: jest.fn(),
     done: jest.fn(),

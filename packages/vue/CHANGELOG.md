@@ -1,4 +1,4 @@
-# @bprogress/vue
+# @lop-town/bprogress-vue
 
 ## 1.1.5
 

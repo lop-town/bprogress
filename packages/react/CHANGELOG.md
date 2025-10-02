@@ -1,4 +1,4 @@
-# @bprogress/react
+# @lop-town/bprogress-react
 
 ## 1.2.7
 

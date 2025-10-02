@@ -1,4 +1,4 @@
-import { useProgress } from '@bprogress/react';
+import { useProgress } from '@lop-town/bprogress-react';
 
 function App() {
   const { start, stop, pause, resume } = useProgress();

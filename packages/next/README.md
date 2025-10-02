@@ -6,14 +6,14 @@ BProgress integration on Next.js compatible with **/app** and **/pages** directo
 
 ## Migration from `next-nprogress-bar`
 
-If you are using `next-nprogress-bar`, you can migrate to `@bprogress/next` by following the [migration guide](https://bprogress.vercel.app/docs/next/migration).
+If you are using `next-nprogress-bar`, you can migrate to `@lop-town/bprogress-next` by following the [migration guide](https://bprogress.vercel.app/docs/next/migration).
 
 ## Installation
 
 To install BProgress, run the following command:
 
 ```bash
-npm install @bprogress/next
+npm install @lop-town/bprogress-next
 ```
 
 ## Import
@@ -23,7 +23,7 @@ npm install @bprogress/next
 Import into your `/app/layout(.js/.jsx/.ts/.tsx)` folder.
 
 ```tsx
-import { ProgressProvider } from '@bprogress/next/app';
+import { ProgressProvider } from '@lop-town/bprogress-next/app';
 ```
 
 ### Pages Directory
@@ -31,7 +31,7 @@ import { ProgressProvider } from '@bprogress/next/app';
 Import into your `/pages/_app(.js/.jsx/.ts/.tsx)` folder.
 
 ```tsx
-import { ProgressProvider } from '@bprogress/next/pages';
+import { ProgressProvider } from '@lop-town/bprogress-next/pages';
 ```
 
 ## Usage
@@ -50,7 +50,7 @@ First approach in a use client layout.
 // In /app/layout.tsx
 'use client';
 
-import { ProgressProvider } from '@bprogress/next/app';
+import { ProgressProvider } from '@lop-town/bprogress-next/app';
 
 export default function RootLayout({
   children,
@@ -82,7 +82,7 @@ Create a Providers component to wrap your application with all the components re
 // In /app/providers.tsx
 'use client';
 
-import { ProgressProvider } from '@bprogress/next/app';
+import { ProgressProvider } from '@lop-town/bprogress-next/app';
 
 const Providers = ({ children }: { children: React.ReactNode }) => {
   return (
@@ -131,7 +131,7 @@ export default function RootLayout({
 ```tsx
 // In /pages/_app.tsx
 import type { AppProps } from 'next/app';
-import { ProgressProvider } from '@bprogress/next/pages';
+import { ProgressProvider } from '@lop-town/bprogress-next/pages';
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
@@ -153,7 +153,7 @@ Go to the [documentation](https://bprogress.vercel.app/docs/next/installation) t
 
 ## Issues
 
-If you encounter any problems, do not hesitate to [open an issue](https://github.com/imskyleen/bprogress/issues) or make a PR [here](https://github.com/imskyleen/bprogress).
+If you encounter any problems, do not hesitate to [open an issue](https://github.com/lop-town/bprogress/issues) or make a PR [here](https://github.com/lop-town/bprogress).
 
 ## LICENSE
 

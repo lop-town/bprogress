@@ -1,4 +1,4 @@
-# @bprogress/remix
+# @lop-town/bprogress-remix
 
 ## 1.0.19
 

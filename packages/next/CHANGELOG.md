@@ -1,4 +1,4 @@
-# @bprogress/next
+# @lop-town/bprogress-next
 
 ## 3.2.12
 

@@ -12,7 +12,7 @@ BProgress support `app` and `pages` directory.
 Import into your `/app/layout(.js/.jsx/.ts/.tsx)` folder.
 
 ```tsx
-import { AppProgressProvider as ProgressProvider } from '@bprogress/next';
+import { AppProgressProvider as ProgressProvider } from '@lop-town/bprogress-next';
 ```
 
 ### Pages Directory
@@ -20,7 +20,7 @@ import { AppProgressProvider as ProgressProvider } from '@bprogress/next';
 Import into your `/pages/_app(.js/.jsx/.ts/.tsx)` folder.
 
 ```tsx
-import { PagesProgressProvider as ProgressProvider } from '@bprogress/next';
+import { PagesProgressProvider as ProgressProvider } from '@lop-town/bprogress-next';
 ```
 
 ## Usage
@@ -40,7 +40,7 @@ First approach in a use client layout.
 ```tsx title="app/layout.tsx"
 'use client';
 
-import { ProgressProvider } from '@bprogress/next/app';
+import { ProgressProvider } from '@lop-town/bprogress-next/app';
 
 export default function RootLayout({
   children,
@@ -50,7 +50,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <ProgressProvider 
+        <ProgressProvider
           height="4px"
           color="#fffd00"
           options={{ showSpinner: false }}
@@ -71,11 +71,11 @@ Create a Providers component to wrap your application with all the components re
 ```tsx title="app/providers.tsx"
 'use client';
 
-import { ProgressProvider } from '@bprogress/next/app';
+import { ProgressProvider } from '@lop-town/bprogress-next/app';
 
 const Providers = ({ children }: { children: React.ReactNode }) => {
   return (
-    <ProgressProvider 
+    <ProgressProvider
       height="4px"
       color="#fffd00"
       options={{ showSpinner: false }}
@@ -118,7 +118,7 @@ export default function RootLayout({
 
 ```tsx title="pages/_app.tsx"
 import type { AppProps } from 'next/app';
-import { ProgressProvider } from '@bprogress/next/pages';
+import { ProgressProvider } from '@lop-town/bprogress-next/pages';
 
 export default function App({ Component, pageProps }: AppProps) {
   return (

@@ -6,7 +6,7 @@ A slim progress bar inspired by NProgress.
 
 ## Migration from `nprogress-v2`
 
-If you are using `nprogress-v2`, you can migrate to `@bprogress/core` by following the [migration guide](https://bprogress.vercel.app/docs/migration).
+If you are using `nprogress-v2`, you can migrate to `@lop-town/bprogress-core` by following the [migration guide](https://bprogress.vercel.app/docs/migration).
 
 ## Installation
 
@@ -15,31 +15,31 @@ If you are using `nprogress-v2`, you can migrate to `@bprogress/core` by followi
 To install BProgress, run the following command:
 
 ```bash
-npm install @bprogress/core
+npm install @lop-town/bprogress-core
 ```
 
 ### CDN
 
 Use **unpkg**:
 
-- JS: https://unpkg.com/@bprogress/core/dist/index.global.js
-- ESM: https://unpkg.com/@bprogress/core/dist/index.js
-- CSS: https://unpkg.com/@bprogress/core/dist/index.css
+- JS: https://unpkg.com/@lop-town/bprogress-core/dist/index.global.js
+- ESM: https://unpkg.com/@lop-town/bprogress-core/dist/index.js
+- CSS: https://unpkg.com/@lop-town/bprogress-core/dist/index.css
 
 Use **jsDelivr**:
 
-- JS: https://cdn.jsdelivr.net/npm/@bprogress/core/dist/index.global.js
-- ESM: https://cdn.jsdelivr.net/npm/@bprogress/core/dist/index.js
-- CSS: https://cdn.jsdelivr.net/npm/@bprogress/core/dist/index.css
+- JS: https://cdn.jsdelivr.net/npm/@lop-town/bprogress-core/dist/index.global.js
+- ESM: https://cdn.jsdelivr.net/npm/@lop-town/bprogress-core/dist/index.js
+- CSS: https://cdn.jsdelivr.net/npm/@lop-town/bprogress-core/dist/index.css
 
 ### Integrations libraries
 
 The following frameworks have a dedicated package for using BProgress:
 
-- [React](https://www.npmjs.com/package/@bprogress/react)
-- [Next.js](https://www.npmjs.com/package/@bprogress/next)
-- [Remix](https://www.npmjs.com/package/@bprogress/remix)
-- [Vue](https://www.npmjs.com/package/@bprogress/vue)
+- [React](https://www.npmjs.com/package/@lop-town/bprogress-react)
+- [Next.js](https://www.npmjs.com/package/@lop-town/bprogress-next)
+- [Remix](https://www.npmjs.com/package/@lop-town/bprogress-remix)
+- [Vue](https://www.npmjs.com/package/@lop-town/bprogress-vue)
 
 ## Quick Start
 
@@ -53,7 +53,7 @@ Import CSS in your `index.html` file.
 <link
   rel="stylesheet"
   type="text/css"
-  href="https://unpkg.com/@bprogress/core/dist/index.css"
+  href="https://unpkg.com/@lop-town/bprogress-core/dist/index.css"
 />
 ```
 
@@ -61,7 +61,7 @@ Import JavaScript in your `index.html` file.
 
 ```html
 <script type="module">
-  import { BProgress } from 'https://unpkg.com/@bprogress/core/dist/index.js';
+  import { BProgress } from 'https://unpkg.com/@lop-town/bprogress-core/dist/index.js';
 
   BProgress.configure({
     ...
@@ -72,7 +72,7 @@ Import JavaScript in your `index.html` file.
 Or you can add `BProgressJS` as a global variable using the legacy include:
 
 ```html
-<script src="https://unpkg.com/@bprogress/core/dist/index.global.js"></script>
+<script src="https://unpkg.com/@lop-town/bprogress-core/dist/index.global.js"></script>
 <script>
   const { BProgress } = BProgressJS;
 
@@ -85,8 +85,8 @@ Or you can add `BProgressJS` as a global variable using the legacy include:
 #### Node.js
 
 ```js
-import '@bprogress/core/css';
-import { BProgress } from '@bprogress/core';
+import '@lop-town/bprogress-core/css';
+import { BProgress } from '@lop-town/bprogress-core';
 ```
 
 ### Basic Usage
@@ -104,7 +104,7 @@ Go to the [documentation](https://bprogress.vercel.app/docs) to learn more about
 
 ## Issues
 
-If you encounter any problems, do not hesitate to [open an issue](https://github.com/imskyleen/bprogress/issues) or make a PR [here](https://github.com/imskyleen/bprogress).
+If you encounter any problems, do not hesitate to [open an issue](https://github.com/lop-town/bprogress/issues) or make a PR [here](https://github.com/lop-town/bprogress).
 
 ## LICENSE
 

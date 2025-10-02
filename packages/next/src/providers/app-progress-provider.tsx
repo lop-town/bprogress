@@ -1,7 +1,7 @@
 import React from 'react';
 import type { AppProgressProps, AppProgressProviderProps } from '../types';
 import { AppProgress } from '../components/app-progress';
-import { withSuspense } from '@bprogress/react';
+import { withSuspense } from '@lop-town/bprogress-react';
 import { NextProgressProvider } from './next-progress-provider';
 
 const SuspendedAppProgress = withSuspense<AppProgressProps>(AppProgress);

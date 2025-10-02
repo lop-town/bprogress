@@ -9,7 +9,7 @@ export {
   Spinner,
   SpinnerIcon,
   Indeterminate,
-} from "@bprogress/react";
+} from "@lop-town/bprogress-react";
 export type {
   SpinnerPosition,
   ProgressContextValue,
@@ -20,6 +20,6 @@ export type {
   SpinnerProps,
   SpinnerIconProps,
   IndeterminateProps,
-} from "@bprogress/react";
+} from "@lop-town/bprogress-react";
 export type * from "./types";
-export type { BProgressOptions } from "@bprogress/core";
+export type { BProgressOptions } from "@lop-town/bprogress-core";

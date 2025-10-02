@@ -24,8 +24,8 @@ export const metadata = {
     'next-nprogress',
     'next-nprogress-bar',
     'nprogress-v2',
-    '@bprogress/core',
-    '@bprogress/next',
+    '@lop-town/bprogress-core',
+    '@lop-town/bprogress-next',
   ],
 };
 

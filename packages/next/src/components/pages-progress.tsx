@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
-import { isSameURL, isSameURLWithoutSearch } from '@bprogress/core';
-import { RouterProgressProps, useProgress, withMemo } from '@bprogress/react';
+import { isSameURL, isSameURLWithoutSearch } from '@lop-town/bprogress-core';
+import { RouterProgressProps, useProgress, withMemo } from '@lop-town/bprogress-react';
 import Router from 'next/router.js';
 
 const PagesProgressComponent = ({

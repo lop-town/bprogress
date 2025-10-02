@@ -1,9 +1,9 @@
 import { render, fireEvent } from '@testing-library/vue';
 import { defineComponent } from 'vue';
 import { ProgressProvider, useProgress } from '../../src';
-import { BProgress } from '@bprogress/core';
+import { BProgress } from '@lop-town/bprogress-core';
 
-jest.mock('@bprogress/core', () => ({
+jest.mock('@lop-town/bprogress-core', () => ({
   BProgress: {
     start: jest.fn(),
     done: jest.fn(),

@@ -1,7 +1,7 @@
 import type {
   AnchorProgressProps,
   AnchorProgressProviderProps,
-} from '@bprogress/react';
+} from '@lop-town/bprogress-react';
 import type { NavigateFunction, Path } from '@remix-run/react';
 
 export interface RemixProgressProps extends AnchorProgressProps {}

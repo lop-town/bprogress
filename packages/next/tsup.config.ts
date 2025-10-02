@@ -12,7 +12,7 @@ export default defineConfig({
     "react-dom",
     "next/router",
     "next/navigation",
-    "@bprogress/react",
-    "@bprogress/core",
+    "@lop-town/bprogress-react",
+    "@lop-town/bprogress-core",
   ],
 });

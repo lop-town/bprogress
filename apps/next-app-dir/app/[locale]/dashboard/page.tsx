@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { useRouter } from '@bprogress/next/app';
+import { useRouter } from '@lop-town/bprogress-next/app';
 
 const Dashboard = () => {
   const router = useRouter();

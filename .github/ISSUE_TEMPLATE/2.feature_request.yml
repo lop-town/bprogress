@@ -20,9 +20,9 @@ body:
     id: provider
     attributes:
       label: Package
-      description: The package (e.g. `@bprogress/core`) concerned by the feature
+      description: The package (e.g. `@lop-town/bprogress-core`) concerned by the feature
       placeholder: |
-        @bprogress/core
+        @lop-town/bprogress-core
   - type: textarea
     attributes:
       label: Additional context

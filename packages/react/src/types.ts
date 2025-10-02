@@ -1,4 +1,4 @@
-import type { BProgressOptions, SpinnerPosition } from '@bprogress/core';
+import type { BProgressOptions, SpinnerPosition } from '../../core/dist';
 
 /**
  * @param start Start the progress bar

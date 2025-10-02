@@ -1,8 +1,8 @@
 'use client';
 
 import Link from 'next/link';
-import { useProgress } from '@bprogress/next';
-import { useRouter } from '@bprogress/next/app';
+import { useProgress } from '@lop-town/bprogress-next';
+import { useRouter } from '@lop-town/bprogress-next/app';
 
 export default function Home() {
   const router = useRouter();
@@ -77,7 +77,7 @@ export default function Home() {
       </button>
       <Link
         className="a"
-        href="https://www.npmjs.com/package/@bprogress/next"
+        href="https://www.npmjs.com/package/@lop-town/bprogress-next"
         target="_blank"
         rel="noopener noreferrer"
       >

@@ -18,11 +18,11 @@ export default defineConfig({
       fileName: (format) => `index.${format}.js`,
     },
     rollupOptions: {
-      external: ['vue', '@bprogress/core'],
+      external: ['vue', '@lop-town/bprogress-core'],
       output: {
         globals: {
           vue: 'Vue',
-          '@bprogress/core': 'BProgressCore',
+          '@lop-town/bprogress-core': 'BProgressCore',
         },
       },
     },

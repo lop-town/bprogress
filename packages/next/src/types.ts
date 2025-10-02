@@ -3,7 +3,7 @@ import type {
   AnchorProgressProviderProps,
   RouterProgressProps,
   RouterProgressProviderProps,
-} from '@bprogress/react';
+} from '@lop-town/bprogress-react';
 import type {
   NavigateOptions,
   PrefetchOptions,

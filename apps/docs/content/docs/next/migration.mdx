@@ -5,7 +5,7 @@ description: Migrate from next-nprogress-bar (v2) to BProgress (v3)
 
 import { Tab, Tabs } from 'fumadocs-ui/components/tabs';
 
-**`next-nprogress-bar` becomes `@bprogress/next`!**
+**`next-nprogress-bar` becomes `@lop-town/bprogress-next`!**
 
 Behind this new identity lies a **major update to the package**, bringing plenty of exciting **new features**.
 
@@ -13,20 +13,20 @@ As the name has changed, there are a few name changes to be made in the package.
 
 ## Installation
 
-You need to uninstall `next-nprogress-bar` and install `@bprogress/next`.
+You need to uninstall `next-nprogress-bar` and install `@lop-town/bprogress-next`.
 
 <Tabs groupId="packageManager" items={['npm', 'pnpm', 'yarn', 'bun']} persist>
   <Tab value="npm">
-    ```diff - npm uninstall next-nprogress-bar + npm install @bprogress/next ```
+    ```diff - npm uninstall next-nprogress-bar + npm install @lop-town/bprogress-next ```
   </Tab>
   <Tab value="pnpm">
-    ```diff - pnpm remove next-nprogress-bar + pnpm add @bprogress/next ```
+    ```diff - pnpm remove next-nprogress-bar + pnpm add @lop-town/bprogress-next ```
   </Tab>
   <Tab value="yarn">
-    ```diff - yarn remove next-nprogress-bar + yarn add @bprogress/next ```
+    ```diff - yarn remove next-nprogress-bar + yarn add @lop-town/bprogress-next ```
   </Tab>
   <Tab value="bun">
-    ```diff - bun remove next-nprogress-bar + bun add @bprogress/next ```
+    ```diff - bun remove next-nprogress-bar + bun add @lop-town/bprogress-next ```
   </Tab>
 </Tabs>
 
@@ -36,7 +36,7 @@ You need to update the import path in your application.
 
 ```diff
 - import { ... } from 'next-nprogress-bar';
-+ import { ... } from '@bprogress/next';
++ import { ... } from '@lop-town/bprogress-next';
 ```
 
 ## Progress Component
@@ -48,11 +48,11 @@ Now you don't import a component but a provider to use the progress bar.
 ```diff
 // App directory
 - import { AppProgressBar as ProgressBar } from 'next-nprogress-bar';
-+ import { ProgressProvider } from '@bprogress/next/app';
++ import { ProgressProvider } from '@lop-town/bprogress-next/app';
 
 // Pages directory
 - import { PagesProgressBar as ProgressBar } from 'next-nprogress-bar';
-+ import { ProgressProvider } from '@bprogress/next/pages';
++ import { ProgressProvider } from '@lop-town/bprogress-next/pages';
 ```
 
 ### Usage
@@ -154,4 +154,4 @@ If you are using custom CSS you will need to make this change:
 
 ## Issues
 
-If you encounter any issues, please [open an issue](https://github.com/imskyleen/bprogress/issues) on the BProgress repository. We'll be happy to help you as soon as possible!
+If you encounter any issues, please [open an issue](https://github.com/lop-town/bprogress/issues) on the BProgress repository. We'll be happy to help you as soon as possible!

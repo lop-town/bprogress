@@ -1,9 +1,9 @@
 export default {
   title: 'BProgress',
   packages: {
-    main: '@bprogress/core',
+    main: '@lop-town/bprogress-core',
     frameworks: {
-      'Next.js': '@bprogress/next',
+      'Next.js': '@lop-town/bprogress-next',
     },
   },
 };

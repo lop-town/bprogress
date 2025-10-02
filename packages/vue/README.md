@@ -5,10 +5,10 @@ Create your own **progress bar** with **Vue**
 ## Import
 
 ```tsx
-import { ProgressProvider } from '@bprogress/vue';
+import { ProgressProvider } from '@lop-town/bprogress-vue';
 ```
 
-The `@bprogress/vue` package is a **utility** that lets you easily manage a progress bar, while remaining flexible with regard to the router you're using. **It doesn't automatically start the progress bar when browsing**, so you'll have to manage this logic yourself, unless you're using one of the integrations below.
+The `@lop-town/bprogress-vue` package is a **utility** that lets you easily manage a progress bar, while remaining flexible with regard to the router you're using. **It doesn't automatically start the progress bar when browsing**, so you'll have to manage this logic yourself, unless you're using one of the integrations below.
 
 ### Vue Frameworks Integrations
 
@@ -25,7 +25,7 @@ The `@bprogress/vue` package is a **utility** that lets you easily manage a prog
 ```vue title="src/Root.vue"
 <script setup lang="ts">
 import App from './App.vue';
-import { ProgressProvider } from '@bprogress/vue';
+import { ProgressProvider } from '@lop-town/bprogress-vue';
 </script>
 
 <template>
@@ -44,7 +44,7 @@ createApp(Root).mount('#app');
 
 ```vue title="src/App.vue"
 <script setup lang="ts">
-import { useProgress } from '@bprogress/vue';
+import { useProgress } from '@lop-town/bprogress-vue';
 
 const { start, stop, pause, resume } = useProgress();
 </script>
@@ -63,7 +63,7 @@ Go to the [documentation](https://bprogress.vercel.app/docs/vue/installation) to
 
 ## Issues
 
-If you encounter any problems, do not hesitate to [open an issue](https://github.com/imskyleen/bprogress/issues) or make a PR [here](https://github.com/imskyleen/bprogress).
+If you encounter any problems, do not hesitate to [open an issue](https://github.com/lop-town/bprogress/issues) or make a PR [here](https://github.com/lop-town/bprogress).
 
 ## LICENSE
 

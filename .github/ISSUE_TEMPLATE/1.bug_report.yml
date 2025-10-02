@@ -15,16 +15,16 @@ body:
       label: Code example
       description: Provide an example code snippet that has the problem.
       placeholder: |
-        import '@bprogress/core/css';
-        import { BProgress } from '@bprogress/core';
+        import '@lop-town/bprogress-core/css';
+        import { BProgress } from '@lop-town/bprogress-core';
         ...
   - type: input
     id: provider
     attributes:
       label: Package used (or docs)
-      description: The package (e.g. `@bprogress/core`) that you are using, and its version (e.g. `1.0.0`).
+      description: The package (e.g. `@lop-town/bprogress-core`) that you are using, and its version (e.g. `1.0.0`).
       placeholder: |
-        @bprogress/core v1.0.0
+        @lop-town/bprogress-core v1.0.0
   - type: textarea
     attributes:
       label: Additional context

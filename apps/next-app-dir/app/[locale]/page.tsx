@@ -1,7 +1,7 @@
 'use client';
 
 import { Link } from '@/i18n/navigation';
-import { useProgress, useRouter } from '@bprogress/next';
+import { useProgress, useRouter } from '@lop-town/bprogress-next';
 import { useRouter as useNextIntlRouter } from '@/i18n/navigation';
 
 export default function Home() {
@@ -132,7 +132,7 @@ export default function Home() {
       </button>
       <Link
         className="a"
-        href="https://www.npmjs.com/package/@bprogress/next"
+        href="https://www.npmjs.com/package/@lop-town/bprogress-next"
         target="_blank"
         rel="noopener noreferrer"
       >

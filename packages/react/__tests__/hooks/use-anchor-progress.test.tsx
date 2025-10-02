@@ -19,7 +19,7 @@ jest.mock('../../src/providers/progress-provider', () => ({
 }));
 
 // Mock utils functions
-jest.mock('@bprogress/core', () => ({
+jest.mock('@lop-town/bprogress-core', () => ({
   isSameURL: jest.fn(() => false),
   isSameURLWithoutSearch: jest.fn(() => false),
   getAnchorProperty: (element: HTMLElement, prop: string) => {

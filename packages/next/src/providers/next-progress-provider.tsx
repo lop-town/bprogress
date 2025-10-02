@@ -4,7 +4,7 @@ import {
   ProgressProvider,
   ProgressProviderProps,
   RouterProgressProps,
-} from '@bprogress/react';
+} from '@lop-town/bprogress-react';
 
 export interface NextProgressProviderComponentProps
   extends ProgressProviderProps {

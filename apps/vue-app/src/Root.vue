@@ -6,5 +6,5 @@
 
 <script setup lang="ts">
 import App from './App.vue'
-import { ProgressProvider } from '@bprogress/vue'
+import { ProgressProvider } from '@lop-town/bprogress-vue'
 </script>

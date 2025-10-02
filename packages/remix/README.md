@@ -7,7 +7,7 @@ BProgress integration for Remix applications.
 To install BProgress, run the following command:
 
 ```bash
-npm install @bprogress/remix
+npm install @lop-town/bprogress-remix
 ```
 
 ## Import
@@ -15,7 +15,7 @@ npm install @bprogress/remix
 Import into your `/app/root(.jsx/.tsx)` folder.
 
 ```tsx
-import { ProgressProvider } from '@bprogress/remix';
+import { ProgressProvider } from '@lop-town/bprogress-remix';
 ```
 
 ## Usage
@@ -35,7 +35,7 @@ import {
   ScrollRestoration,
 } from '@remix-run/react';
 import type { LinksFunction } from '@remix-run/node';
-import { ProgressProvider } from '@bprogress/remix';
+import { ProgressProvider } from '@lop-town/bprogress-remix';
 
 import './tailwind.css';
 
@@ -81,7 +81,7 @@ Go to the [documentation](https://bprogress.vercel.app/docs/remix/installation) 
 
 ## Issues
 
-If you encounter any problems, do not hesitate to [open an issue](https://github.com/imskyleen/bprogress/issues) or make a PR [here](https://github.com/imskyleen/bprogress).
+If you encounter any problems, do not hesitate to [open an issue](https://github.com/lop-town/bprogress/issues) or make a PR [here](https://github.com/lop-town/bprogress).
 
 ## LICENSE
 

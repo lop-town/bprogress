@@ -11,7 +11,7 @@ import {
 } from 'lucide-react';
 import Link from 'next/link';
 import { useMemo, useState } from 'react';
-import { useProgress } from '@bprogress/next';
+import { useProgress } from '@lop-town/bprogress-next';
 import config from 'site.config';
 
 export const Hero = () => {

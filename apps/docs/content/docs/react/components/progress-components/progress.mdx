@@ -11,7 +11,7 @@ One of the great new features of **BProgress** version `1.1` is the ability to i
 The `Progress` component is optional, meaning you can use it to create one or more progress bars in your code. If you don't, the default progress bar will be created automatically.
 
 <Callout type="warn" title="Warning">
-  When using a custom component for the progress bar, the component will not be dynamically added or removed from the DOM. Instead, it will simply toggle between `display: block` and `display: none`.  
+  When using a custom component for the progress bar, the component will not be dynamically added or removed from the DOM. Instead, it will simply toggle between `display: block` and `display: none`.
   This behavior may impact performance, especially if the component involves complex rendering or layout calculations.
 </Callout>
 
@@ -22,11 +22,11 @@ The `Progress` component is optional, meaning you can use it to create one or mo
 You can import the `Progress` component like this:
 
 ```tsx
-import { Progress } from '@bprogress/...';
+import { Progress } from '@lop-town/bprogress-...';
 ```
 
 <Callout title="Note">
-  Replace the `...` in the import with the library you're using. For example, if you use `@bprogress/next`, import by doing `from '@bprogress/next'`
+  Replace the `...` in the import with the library you're using. For example, if you use `@lop-town/bprogress-next`, import by doing `from '@lop-town/bprogress-next'`
 </Callout>
 
 <Callout type='warn' title="Warning">
@@ -46,7 +46,7 @@ import { Progress } from '@bprogress/...';
 You can use one or more progressive components anywhere in your code.
 
 <Callout type='warn' title="Warning">
-  The `Progress` component has a `display:none;` style by default, and this will change to `display:block;` for display. You won't be able to play with the component's display property. 
+  The `Progress` component has a `display:none;` style by default, and this will change to `display:block;` for display. You won't be able to play with the component's display property.
 </Callout>
 
 You can use with no children:
@@ -90,7 +90,7 @@ This can be a good solution if you want to customize your `Progress` component w
 ```
 
 <Callout title="Note">
-  Here we use `!` to set classes to `!important`, as we're using basic CSS. However, if you're using custom CSS or no CSS with the `disableStyle` property, you don't need to set the classes to `!important`. 
+  Here we use `!` to set classes to `!important`, as we're using basic CSS. However, if you're using custom CSS or no CSS with the `disableStyle` property, you don't need to set the classes to `!important`.
 </Callout>
 
 ### Props

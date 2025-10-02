@@ -16,7 +16,7 @@ import {
   toRefs,
   unref,
 } from 'vue';
-import { BProgress, css, type BProgressOptions } from '@bprogress/core';
+import { BProgress, css, type BProgressOptions } from '@lop-town/bprogress-core';
 import { progressSymbol } from '../composables/use-progress';
 import type { ProgressProviderProps, ProgressContextValue } from '../types';
 

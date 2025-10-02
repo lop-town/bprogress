@@ -1,4 +1,4 @@
-import { useProgress, useNavigate } from '@bprogress/remix';
+import { useProgress, useNavigate } from '@lop-town/bprogress-remix';
 import type { MetaFunction } from '@remix-run/node';
 import {
   Link,
@@ -101,7 +101,7 @@ export default function Index() {
 
         <Link
           className="a"
-          to="https://www.npmjs.com/package/@bprogress/next"
+          to="https://www.npmjs.com/package/@lop-town/bprogress-next"
           target="_blank"
           rel="noopener noreferrer"
         >

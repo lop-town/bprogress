@@ -10,7 +10,7 @@
     "test:unit": "jest"
   },
   "dependencies": {
-    "@bprogress/next": "workspace:*",
+    "@lop-town/bprogress-next": "workspace:*",
     "@workspace/ui": "workspace:*",
     "lucide-react": "0.456.0",
     "next": "^15.2.0",

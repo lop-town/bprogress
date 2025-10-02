@@ -1,4 +1,4 @@
-import { BProgress, css, type BProgressOptions } from '@bprogress/core';
+import { BProgress, css, type BProgressOptions } from '../../../core/dist';
 import React, {
   createContext,
   useCallback,

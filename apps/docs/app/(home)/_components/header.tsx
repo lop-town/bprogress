@@ -23,7 +23,7 @@ export const Header = () => {
               asChild
             >
               <Link
-                href="https://github.com/imskyleen/bprogress"
+                href="https://github.com/lop-town/bprogress"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -36,7 +36,7 @@ export const Header = () => {
               asChild
             >
               <Link
-                href="https://www.npmjs.com/package/@bprogress/core"
+                href="https://www.npmjs.com/package/@lop-town/bprogress-core"
                 target="_blank"
                 rel="noreferrer"
               >

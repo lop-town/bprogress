@@ -5,10 +5,10 @@ Create your own **progress bar** with **React**
 ## Import
 
 ```tsx
-import { ProgressProvider } from '@bprogress/react';
+import { ProgressProvider } from '@lop-town/bprogress-react';
 ```
 
-The `@bprogress/react` package is a **utility** that lets you easily manage a progress bar, while remaining flexible with regard to the router you're using. **It doesn't automatically start the progress bar when browsing**, so you'll have to manage this logic yourself, unless you're using one of the integrations below.
+The `@lop-town/bprogress-react` package is a **utility** that lets you easily manage a progress bar, while remaining flexible with regard to the router you're using. **It doesn't automatically start the progress bar when browsing**, so you'll have to manage this logic yourself, unless you're using one of the integrations below.
 
 ### React Frameworks Integrations
 
@@ -29,7 +29,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-import { ProgressProvider } from '@bprogress/react';
+import { ProgressProvider } from '@lop-town/bprogress-react';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement,
@@ -44,7 +44,7 @@ root.render(
 ```
 
 ```tsx title="src/App.tsx"
-import { useProgress } from '@bprogress/react';
+import { useProgress } from '@lop-town/bprogress-react';
 
 function App() {
   const { start, stop, pause, resume } = useProgress();
@@ -68,7 +68,7 @@ Go to the [documentation](https://bprogress.vercel.app/docs/react/installation) 
 
 ## Issues
 
-If you encounter any problems, do not hesitate to [open an issue](https://github.com/imskyleen/bprogress/issues) or make a PR [here](https://github.com/imskyleen/bprogress).
+If you encounter any problems, do not hesitate to [open an issue](https://github.com/lop-town/bprogress/issues) or make a PR [here](https://github.com/lop-town/bprogress).
 
 ## LICENSE
 

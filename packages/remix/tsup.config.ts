@@ -10,7 +10,7 @@ export default defineConfig({
     "react",
     "react-dom",
     "@remix-run/react",
-    "@bprogress/core",
-    "@bprogress/react",
+    "@lop-town/bprogress-core",
+    "@lop-town/bprogress-react",
   ],
 });

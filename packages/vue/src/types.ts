@@ -1,4 +1,4 @@
-import type { BProgressOptions, SpinnerPosition } from '@bprogress/core';
+import type { BProgressOptions, SpinnerPosition } from '@lop-town/bprogress-core';
 import type { Component, CSSProperties, Ref } from 'vue';
 
 /**

@@ -1,4 +1,4 @@
-# @bprogress/core
+# @lop-town/bprogress-core
 
 ## 1.3.4
 

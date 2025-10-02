@@ -8,9 +8,9 @@ import type {
 } from '../types';
 import { useRouter as useNextRouter } from 'next/navigation.js';
 import { useRef } from 'react';
-import { isSameURL } from '@bprogress/core';
+import { isSameURL } from '@lop-town/bprogress-core';
 import { AppRouterInstance as NextAppRouterInstance } from 'next/dist/shared/lib/app-router-context.shared-runtime';
-import { useProgress } from '@bprogress/react';
+import { useProgress } from '@lop-town/bprogress-react';
 
 /**
  * Helper function that removes the first path segment from a URL.

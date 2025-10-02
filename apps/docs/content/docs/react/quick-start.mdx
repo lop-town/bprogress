@@ -9,7 +9,7 @@ import { HiDotsHorizontal } from "react-icons/hi";
 ## Import
 
 ```tsx
-import { ProgressProvider } from '@bprogress/react';
+import { ProgressProvider } from '@lop-town/bprogress-react';
 ```
 
 ## Usage
@@ -27,7 +27,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-import { ProgressProvider } from '@bprogress/react';
+import { ProgressProvider } from '@lop-town/bprogress-react';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement,
@@ -42,7 +42,7 @@ root.render(
 ```
 
 ```tsx title="src/App.tsx"
-import { useProgress } from '@bprogress/react';
+import { useProgress } from '@lop-town/bprogress-react';
 
 function App() {
   const { start, stop, pause, resume } = useProgress();

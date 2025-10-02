@@ -1,5 +1,5 @@
 import { useLocation } from '@remix-run/react';
-import { useAnchorProgress, withMemo } from '@bprogress/react';
+import { useAnchorProgress, withMemo } from '@lop-town/bprogress-react';
 import type { RemixProgressProps } from '../types';
 
 const RemixProgressComponent = (props: RemixProgressProps) => {

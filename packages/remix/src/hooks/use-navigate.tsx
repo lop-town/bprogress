@@ -1,8 +1,8 @@
 import { useCallback } from 'react';
 import { useNavigate as useRemixNavigate } from '@remix-run/react';
-import { isSameURL } from '@bprogress/core';
+import { isSameURL } from '@lop-town/bprogress-core';
 import { ProgressNavigateFunction, NavigateProgressOptions } from '../types';
-import { useProgress } from '@bprogress/react';
+import { useProgress } from '@lop-town/bprogress-react';
 
 /**
  * Custom hook that extends Remix's useNavigate with progress bar functionality.

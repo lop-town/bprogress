@@ -1,5 +1,5 @@
 import React from 'react';
-import { ProgressProvider } from '@bprogress/react';
+import { ProgressProvider } from '@lop-town/bprogress-react';
 import { RemixProgress } from '../components/remix-progress';
 import type { RemixProgressProviderProps } from '../types';
 

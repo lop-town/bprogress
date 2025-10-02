@@ -4,7 +4,7 @@
 
 <script setup lang="ts">
 import { useRoute } from 'vue-router'
-import { useAnchorProgress } from '@bprogress/vue'
+import { useAnchorProgress } from '@lop-town/bprogress-vue'
 
 const route = useRoute()
 

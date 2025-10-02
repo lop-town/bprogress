@@ -11,7 +11,7 @@
     "react-scripts": "5.0.1",
     "typescript": "^4.9.5",
     "web-vitals": "^2.1.4",
-    "@bprogress/react": "workspace:*"
+    "@lop-town/bprogress-react": "workspace:*"
   },
   "scripts": {
     "start": "DISABLE_ESLINT_PLUGIN=true react-scripts start",

@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
-import { useProgress, Progress } from '@bprogress/vue'
+import { useProgress, Progress } from '@lop-town/bprogress-vue'
 import HelloWorld from './components/HelloWorld.vue'
 import ProgressBar from './components/ProgressBar.vue'
 

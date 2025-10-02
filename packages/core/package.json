@@ -1,17 +1,16 @@
 {
-  "name": "@bprogress/core",
+  "name": "@lop-town/bprogress-core",
   "version": "1.3.4",
   "type": "module",
   "description": "NProgress-inspired library with more features",
   "repository": {
     "type": "git",
-    "url": "https://github.com/imskyleen/bprogress.git"
+    "url": "https://github.com/lop-town/bprogress.git"
   },
   "bugs": {
-    "url": "https://github.com/imskyleen/bprogress/issues"
+    "url": "https://github.com/lop-town/bprogress/issues"
   },
-  "homepage": "https://bprogress.vercel.app/",
-  "author": "Skyleen",
+  "author": "lop-town",
   "license": "MIT",
   "keywords": [
     "nprogress",
@@ -37,10 +36,10 @@
     "lint": "eslint . --max-warnings 0",
     "build": "tsup",
     "dev": "tsup --watch",
-    "pub:release": "pnpm publish --no-git-checks --access public",
-    "pub:canary": "pnpm publish --no-git-checks --tag canary --access public",
-    "pub:beta": "pnpm publish --no-git-checks --tag beta --access public",
-    "prepublishOnly": "pnpm test && pnpm lint && pnpm build",
+    "pub:release": "bun publish --no-git-checks --access public",
+    "pub:canary": "bun publish --no-git-checks --tag canary --access public",
+    "pub:beta": "bun publish --no-git-checks --tag beta --access public",
+    "prepublishOnly": "bun run test && bun run lint && bun run build",
     "test": "jest"
   },
   "devDependencies": {
